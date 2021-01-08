@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css" media="screen">
-    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="avicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <script src="https://kit.fontawesome.com/05a9728d0d.js" crossorigin="anonymous"></script>
     <title>portfólio</title>
@@ -19,9 +19,9 @@
             <div class="line" id="line3"></div>
             <span>Fechar</span>
         </div>
-        <header>
+        <header id="home">
             <div class="img-wrapper">
-                <img src="imagens/bg.jpg" alt="">
+                <img src="bg.jpg" alt="">
             </div>
             <div class="banner">
                 <h1>Web Developer Full Stack</h1>
@@ -32,20 +32,20 @@
         <aside class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Conhecimentos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contatos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
+                    <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimentos</a></li>
+                    <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#contatos" class="menu-link">Contatos</a></li>
+                    <li class="menu-item"><a href="#orçamento" class="menu-link">Orçamento</a></li>
                 </ul>
             </nav>
             <div class="social-media">
-                <a href=""><i class="fab fa-facebook"></i></a>
-                <a href=""><i class="fab fa-github"></i></a>
-                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5521984033281&text=Ol%C3%A1%21%20Eu%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."><i class="fab fa-whatsapp"></i></a>
+                <a href="https://github.com/IgorCastro-dev"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/igorjcastro19/"><i class="fab fa-instagram"></i></a>
             </div>
         </aside>
-        <section class="sessao-conhecimentos">
+        <section class="sessao-conhecimentos" id="conhecimentos">
             <div class="sessao-header">
                 <h1>Conhecimentos</h1>
             </div>
@@ -95,7 +95,7 @@
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, iusto. Amet eius quisquam voluptatum voluptatibus dolorum expedita odit, pariatur enim maiores est ex aliquam id exercitationem quibusdam ipsum laborum eos!</p>
                     </div>
                 </div>
-                <div class="conhecimento">
+                <div class="conhecimento" >
                     <div class="conhecimento-header">
                         <i class="fab fa-cuttlefish"></i>
                         <h3>Linguagem em c</h3>
@@ -105,17 +105,17 @@
                     </div>
                 </div>
                 <div class="conhecimentos-img-wrapper">
-                    <img src="imagens/conhecimentos.png" alt="imagem conhecimento">
+                    <img src="conhecimentos.png" alt="imagem conhecimento">
                 </div>
         </section>
-        <section class="sessao-projetos">
+        <section class="sessao-projetos" id="projetos">
             <div class="sessao-header">
                 <h1>Projetos</h1>
             </div>
             <div class="projetos">
                 <div class="card">
                     <div class="card-img-wrapper">
-                        <img src="imagens/card1.jpg" alt="imagem do card 1">
+                        <img src="card1.jpg" alt="imagem do card 1">
                     </div>
                     <div class="card-info">
                         <h2>ToDo List</h2>
@@ -126,7 +126,7 @@
                 </div>
                 <div class="card">
                     <div class="card-img-wrapper">
-                        <img src="imagens/card2.jpg" alt="imagem do card 2">
+                        <img src="card2.jpg" alt="imagem do card 2">
                     </div>
                     <div class="card-info">
                         <h2>Maratona</h2>
@@ -137,7 +137,7 @@
                 </div>
                 <div class="card">
                     <div class="card-img-wrapper">
-                        <img src="imagens/card3.jpg" alt="imagem do card 3">
+                        <img src="card3.jpg" alt="imagem do card 3">
                     </div>
                     <div class="card-info">
                         <h2>Casa Bela</h2>
@@ -148,7 +148,7 @@
                 </div>
             </div>
         </section>
-        <section class="sessao-contato">
+        <section class="sessao-contato" id="contatos">
             <div class="contato-wrapper">
                 <div class="contato-left"></div>
                 <div class="contato-right">
@@ -171,7 +171,7 @@
                 </div>
             </div>
         </section>
-        <section class="sessao-orçamento">
+        <section class="sessao-orçamento" id="orçamento">
             <div class="orçamento-wrapper">
                 <h1>Faça um orçamento</h1>
                 <form>
@@ -197,6 +197,23 @@
             </div>
         </section>
     </div>
+    <footer>
+        <div class="footer-content">
+            <p>
+                Copyright &copy; 2021, ESTECIA DS - Todos os direitos reservados
+            </p>
+            <div class="social-list">
+                <ul>
+                    <li><a href="https://api.whatsapp.com/send?phone=5521984033281&text=Ol%C3%A1%21%20Eu%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="https://www.instagram.com/igorjcastro19/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/IgorCastro-dev"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <a href="#home" id="link-topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
     <script src="script.js"></script>
 </body>
 </html>
