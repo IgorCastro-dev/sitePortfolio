@@ -121,7 +121,7 @@
                         <h2>ToDo List</h2>
                         <h3>Javascript</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit aspernatur placeat nostrum, quos aut sit, ipsa harum maiores corrupti exercitationem earum dicta vero, quasi sint non accusamus voluptate esse molestiae!</p>
-                        <button>Saiba Mais</button>
+                        <button class="btn">Saiba Mais</button>
                     </div>
                 </div>
                 <div class="card">
@@ -132,7 +132,7 @@
                         <h2>Maratona</h2>
                         <h3>HTML,CSS</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque esse explicabo, dolore ipsam doloremque reprehenderit delectus id culpa deleniti voluptas rerum sapiente doloribus laboriosam unde officia repellendus quis qui soluta.</p>
-                        <button>Saiba Mais</button>
+                        <button class="btn">Saiba Mais</button>
                     </div>
                 </div>
                 <div class="card">
@@ -143,9 +143,57 @@
                         <h2>Casa Bela</h2>
                         <h3>HTML</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde quia debitis necessitatibus, quidem vel veritatis, autem explicabo tenetur officiis rem esse. Magni cum dolorum porro ad quis et, quod eum.</p>
-                        <button>Saiba Mais</button>
+                        <button class="btn">Saiba Mais</button>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="sessao-contato">
+            <div class="contato-wrapper">
+                <div class="contato-left"></div>
+                <div class="contato-right">
+                    <h1>Contato</h1>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="field" id="nome">
+                            <label for="nome" class="field-label">Nome</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="field" id="email">
+                            <label for="email" class="field-label">E-mail</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="field" id="mensagem"></textarea>
+                            <label for="mensagem" class="field-label">Mensagem</label>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="sessao-orçamento">
+            <div class="orçamento-wrapper">
+                <h1>Faça um orçamento</h1>
+                <form>
+                    <label for="qtde">Qtde de Páginas</label>
+                    <input type="number" min="1" name="qtde" id="qtde">
+                    <label for="js">Preciso de um script JS</label>
+                    <input type="checkbox" name="js" id="js">
+                    <label>Layout</label>
+                    <div class="group-layout">
+                        <div>
+                            <input type="radio" name="layout" id="layout-sim">
+                            <label for="layout-sim">Preciso de um layout</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="layout" id="layout-nao">
+                            <label for="layout-nao">Já tenho um layout</label>
+                        </div>
+                    </div>
+                    <label for="prazo">Prazo</label>
+                    <input type="range" name="prazo" id="prazo">
+                    <button class="btn btn-orçamento" type="submit">Enviar</button>
+                </form>
             </div>
         </section>
     </div>
